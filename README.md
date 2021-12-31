@@ -6,6 +6,8 @@ The Azure Function calls the SMA Crypto API from Coinslosh to detect a Golden Cr
 A golden cross means that a short-term simple moving average (SMA) exceeds a long-term SMA. This can be, for example, a 9-day SMA versus a 26-day SMA. This is a positive sign. 
 It may indicate a structural appreciation in value and can be the start of a bull market.
 
+Example of a golden cross of the Ethereum price, indicated by a dotted line:
+![GoldenCross-dottedline](https://user-images.githubusercontent.com/4686866/147818557-5f74e838-c9eb-4c9a-b35e-2ec869caf9ed.png)
 
-Visual Studio Tools for Azure Functions
+Visual Studio Tools for Azure Functions:
 ![Azure Functions Core Tools](https://user-images.githubusercontent.com/4686866/147817509-d6e03d01-96fd-4fa7-bb8e-d3ab22d459ec.png)
