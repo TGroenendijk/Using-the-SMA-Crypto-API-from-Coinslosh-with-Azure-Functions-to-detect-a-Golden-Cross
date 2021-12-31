@@ -28,15 +28,18 @@ namespace Coinslosh.FunctionApp
             string interval = "30m";
             string candleType = "Candles";
 
+            // Get values from Coinslosh API
             CoinsloshFacade facade = new CoinsloshFacade(subscriptionKey);
             double shortSMA = await facade.GetValueSMA(shortPeriod, market, interval, candleType);
             double longSMA = await facade.GetValueSMA(longPeriod, market, interval, candleType);
 
+            // Log SMA values
             log.LogInformation($"[MarketData] Market: {market} Short Period: {shortPeriod} SMA: {shortSMA}");
             log.LogInformation($"[MarketData] Market: {market} Long Period: {longPeriod} SMA: {longSMA}");
 
             if (shortSMA > longSMA)
             {
+                // Log Golden Cross detected
                 log.LogInformation($"[MarketData] Golden Cross detected for market: {market} ");
             }            
         }

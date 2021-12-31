@@ -20,7 +20,7 @@ namespace Coinslosh.FunctionApp.Facades
         private string BaseAddress = "https://api.coinslosh.com/";
         private string ApiSMA = "sma/v1/";
 
-        #region GetUserIdByToken
+        #region GetValueSMA
         public async Task<double> GetValueSMA(int period, string market, string interval, string candleType)
         {
 
@@ -28,12 +28,13 @@ namespace Coinslosh.FunctionApp.Facades
 
             using (var client = new HttpClient())
             {
+                // Add paramaters to uri
                 string requestUri = string.Format("{0}?period={1}&market={2}&interval={3}&type={4}", ApiSMA, period, market, interval, candleType);
 
                 client.BaseAddress = new Uri(BaseAddress);
                 client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SubscriptionKey);
 
-                // Get all the subscriptions from API Management
+                // Get SMA value from Conslosh API
                 HttpResponseMessage response = await client.GetAsync(requestUri);
                 if (response.IsSuccessStatusCode)
                 {
