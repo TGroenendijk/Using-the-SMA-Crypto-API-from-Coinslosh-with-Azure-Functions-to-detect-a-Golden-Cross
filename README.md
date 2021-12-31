@@ -14,3 +14,8 @@ Azure Functions allows you to implement your system's logic into readily-availab
 
 Visual Studio Tools for Azure Functions:
 ![Azure Functions Core Tools](https://user-images.githubusercontent.com/4686866/147817509-d6e03d01-96fd-4fa7-bb8e-d3ab22d459ec.png)
+
+
+### coinslosh.com
+Coinslosh is a free Crypto API platform that contains Web APIs to get Crypto candles and Indicators so that users don't have to develop complicated functionality for that.
+Create a free Coinslosh account on: https://www.coinslosh.com/
