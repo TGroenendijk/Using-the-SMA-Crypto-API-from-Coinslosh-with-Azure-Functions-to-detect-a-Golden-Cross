@@ -9,5 +9,8 @@ It may indicate a structural appreciation in value and can be the start of a bul
 Example of a golden cross of the Ethereum price, indicated by a dotted line:
 ![GoldenCross-dottedline](https://user-images.githubusercontent.com/4686866/147818557-5f74e838-c9eb-4c9a-b35e-2ec869caf9ed.png)
 
+## Azure Functions
+Azure Functions allows you to implement your system's logic into readily-available blocks of code. These code blocks are called "functions".
+
 Visual Studio Tools for Azure Functions:
 ![Azure Functions Core Tools](https://user-images.githubusercontent.com/4686866/147817509-d6e03d01-96fd-4fa7-bb8e-d3ab22d459ec.png)
