@@ -13,7 +13,7 @@ Example of a golden cross of the Ethereum price, indicated by a dotted line:</br
 Azure Functions allows you to implement your system's logic into readily-available blocks of code. These code blocks are called "functions".
 The sample uses a timer trigger with a cron-expression to define when the function needs to run.
 
-C# function that is executed each 30 seconds:</br>
+The C# MarketData function is executed each 30 seconds to get the short-term and long-term SMA for Bitcoin:</br>
 <img src="https://user-images.githubusercontent.com/4686866/147873971-bd75a04d-2f8f-449c-bc50-66a26137e5b8.png" width=65% height=65%>
 
 ### Testing functions
